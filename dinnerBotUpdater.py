@@ -9,8 +9,8 @@ def getMatches():
 
     ##init db connection
     dynamodb = boto3.resource('dynamodb')
-    dinnerBoardTable = dynamodb.Table('PUBG_DinnerBoard')
-    dinnersTable = dynamodb.Table('PUBG_Dinners')
+    dinnerBoardTable = dynamodb.Table(config.dinnerBoardTable)
+    dinnersTable = dynamodb.Table(config.dinnersTable)
 
     times = []
 
