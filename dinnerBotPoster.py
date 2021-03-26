@@ -4,7 +4,7 @@ import boto3
 import config
 
 dynamodb = boto3.resource('dynamodb')
-dinnerBoardTable = dynamodb.Table('PUBG_DinnerBoard')
+dinnerBoardTable = dynamodb.Table(config.dinnerBoardTable)
 
 #get dinnerboard from db and format 
 entries = dinnerBoardTable.scan()['Items']
