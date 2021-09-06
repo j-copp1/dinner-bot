@@ -1,0 +1,1 @@
+App runs every 30 minutes and hits the limit twice. Since I have 9 players whose wins I look for, it has 20-30 requests.
